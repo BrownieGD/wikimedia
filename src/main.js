@@ -105,29 +105,6 @@ function handlePlay(data) {
     videoContainer.appendChild(videoPlayer);
   }
 }
-
-// ----- Routing / Navigation -----
-
-const moviesBtn = document.getElementById('movies');
-const radioBtn = document.getElementById('radio');
-const tvBtn = document.getElementById('tv');
-const seriesBtn = document.getElementById('series');
-
-// Initialize heading style and text.
-heading.style.fontWeight = 'bold';
-heading.style.fontSize = '1.5rem';
-updateHeading('Movies:');
-
-// Attach event listeners.
-moviesBtn.addEventListener('click', () => updateHeading('Movies:'));
-radioBtn.addEventListener('click', () => updateHeading('Radio:'));
-tvBtn.addEventListener('click', () => updateHeading('TV:'));
-seriesBtn.addEventListener('click', () => updateHeading('Series:'));
-
-function updateHeading(newText) {
-  heading.textContent = newText;
-}
-
 // ----- Example Usage -----
 
 renderCard({
