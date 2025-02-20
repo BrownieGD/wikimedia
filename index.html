@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+  <link rel="stylesheet" href="src/style.css">
+</head>
+
+<body>
+  <div class="flex h-screen" id="app">
+    <!-- Sidebar Navigation -->
+    <div id="sidebar" class="w-64 h-full bg-gray-800 text-white p-5 shadow-lg relative overflow-y-auto">
+      <ul class="space-y-4 ml-3 mt-3">
+        <li><button id="movies" class="font-bold text-lg hover:text-gray-400">Movies</button></li>
+        <li><button id="radio" class="font-bold text-lg hover:text-gray-400">Radio</button></li>
+        <li><button id="tv" class="font-bold text-lg hover:text-gray-400">TV</button></li>
+        <li><button id="series" class="font-bold text-lg hover:text-gray-400">Series</button></li>
+      </ul>
+      <button class="absolute right-4 top-1/2 transform -translate-y-1/2 text-4xl hover:text-5xl" id="closeSidebar">
+        &lt;
+      </button>
+    </div>
+
+    <!-- Main Content: Movie Cards on the Right -->
+    <div class="flex-1 p-6 overflow-y-auto bg-gray-100">
+      <h3 id="heading"></h3>
+      <div class="grid grid-cols-1 gap-4" id="content">
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
